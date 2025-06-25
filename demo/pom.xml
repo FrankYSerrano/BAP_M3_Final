@@ -13,13 +13,22 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
     </properties>
-    <dependency>
+    <dependencies>
         <!-- Dependencia para JUnit 5 -->
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>5.10.2</version>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.9.3</version>
             <scope>test</scope>
-    </dependency>
+        </dependency>
+        <!-- Dependencia para Mockito -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>5.5.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
     <build>
         <plugins>
             <!-- Plugin para compilar y ejecutar pruebas con JUnit 5 -->
@@ -29,7 +38,5 @@
                 <version>3.1.2</version>
             </plugin>
         </plugins>
-    </build>
-
-
+        </build>
 </project>
